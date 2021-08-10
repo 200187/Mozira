@@ -6,6 +6,7 @@ public class EnemyCount : MonoBehaviour
 {
     public static int score = 0;
     bool isClicked = false;
+    int clicks = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -32,13 +33,15 @@ public class EnemyCount : MonoBehaviour
     
     public void ClickedHelmet()
     {
-        if (!isClicked)
+        clicks++;
+
+        if (clicks>=2)
         {
             score++;
             Destroy(transform.parent.gameObject.transform.parent.gameObject);
             GameProgression.EnemyExists = false;
-        }
-        isClicked = true;
+            clicks = 0;
+        }     
     }
     
     public void ClickedRare()
