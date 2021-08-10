@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour
 {
+    bool isClicked = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,11 @@ public class StartButton : MonoBehaviour
 
     public void Clicked()
     {
-        Invoke("ChangeScene", 1.5f);
+        if (!isClicked)
+        {
+            Invoke("ChangeScene", 1.5f);
+        }
+        isClicked = true;
     }
 
     void ChangeScene()

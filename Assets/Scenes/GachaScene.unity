@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 1036241578}
   - component: {fileID: 1036241577}
   m_Layer: 0
-  m_Name: GachaTestWall
+  m_Name: GachaWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

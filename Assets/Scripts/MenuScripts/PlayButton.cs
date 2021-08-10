@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class PlayButton : MonoBehaviour
 {
     public static int players = 0;
+    bool isClicked = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,13 +23,21 @@ public class PlayButton : MonoBehaviour
     public void ClickedSinglePlay()
     {
         players = 1;
-        Invoke("ChangeScene", 1.5f);
+        if (!isClicked)
+        {
+            Invoke("ChangeScene", 1.5f);
+        }
+        isClicked = true;
     }
 
     public void ClickedMultiPlay()
     {
         players = 2;
-        Invoke("ChangeScene", 1.5f);
+        if (!isClicked)
+        {
+            Invoke("ChangeScene", 1.5f);
+        }
+        isClicked = true;
     }
 
     void ChangeScene()

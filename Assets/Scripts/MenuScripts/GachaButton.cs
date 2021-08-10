@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GachaButton : MonoBehaviour
 {
+    bool isClicked = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,11 @@ public class GachaButton : MonoBehaviour
 
     public void Clicked()
     {
-        Invoke("ChangeScene", 1.5f);
+        if (!isClicked)
+        {
+            Invoke("ChangeScene", 1.5f);
+        }
+        isClicked = true;
     }
 
     void ChangeScene()

@@ -24,7 +24,8 @@ public class EnemyCount : MonoBehaviour
         if (!isClicked)
         {
             score++;
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject.transform.parent.gameObject);
+            GameProgression.EnemyExists = false;
         }
         isClicked = true;
     }
@@ -34,7 +35,8 @@ public class EnemyCount : MonoBehaviour
         if (!isClicked)
         {
             score++;
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject.transform.parent.gameObject);
+            GameProgression.EnemyExists = false;
         }
         isClicked = true;
     }
@@ -44,7 +46,8 @@ public class EnemyCount : MonoBehaviour
         if (!isClicked)
         {
             score += 3;
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject.transform.parent.gameObject);
+            GameProgression.EnemyExists = false;
         }
         isClicked = true;
     }
@@ -54,7 +57,8 @@ public class EnemyCount : MonoBehaviour
         if (!isClicked)
         {
             score -= 3;
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject.transform.parent.gameObject);
+            GameProgression.EnemyExists = false;
         }
         isClicked = true;
     }

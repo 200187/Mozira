@@ -981,7 +981,7 @@ GameObject:
   - component: {fileID: 1549433731}
   - component: {fileID: 1549433730}
   m_Layer: 0
-  m_Name: MenuTestWall
+  m_Name: MenuWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
