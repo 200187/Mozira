@@ -25,7 +25,7 @@ public class PlayButton : MonoBehaviour
         players = 1;
         if (!isClicked)
         {
-            Invoke("ChangeScene", 1.5f);
+            Invoke("ChangeScene", 1.0f);
         }
         isClicked = true;
     }
@@ -35,7 +35,7 @@ public class PlayButton : MonoBehaviour
         players = 2;
         if (!isClicked)
         {
-            Invoke("ChangeScene", 1.5f);
+            Invoke("ChangeScene", 1.0f);
         }
         isClicked = true;
     }

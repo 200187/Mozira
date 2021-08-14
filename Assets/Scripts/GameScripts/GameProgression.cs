@@ -17,7 +17,7 @@ public class GameProgression : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Timer.TimeLimit>=0)
         {
@@ -25,7 +25,7 @@ public class GameProgression : MonoBehaviour
             {
                 GameObject obj = (GameObject)Resources.Load(RandomEnemy());
 
-                switch ((int)Random.Range(1,11))
+                switch ((int)Random.Range(1,12))
                 { 
                     case 1:
                         instance = (GameObject)Instantiate(obj, new Vector3(156.5f, 353.0f, 0.0f), Quaternion.identity);
@@ -58,7 +58,7 @@ public class GameProgression : MonoBehaviour
                         instance = (GameObject)Instantiate(obj, new Vector3(632.5f, 111.0f, 0.0f), Quaternion.identity);
                         EnemyExists = true; break;
                     case 11:
-                        instance = (GameObject)Instantiate(obj, new Vector3(823.5f, 54.0f, 0.0f), Quaternion.identity);
+                        instance = (GameObject)Instantiate(obj, new Vector3(823.5f, 194.0f, 0.0f), Quaternion.identity);
                         EnemyExists = true; break;
                 }
             }
@@ -79,13 +79,13 @@ public class GameProgression : MonoBehaviour
         switch (Random.Range(1, 5))
         {
             case 1:
-                return "Mozira";
+                return "Enemys/Mozira";
             case 2:
-                return "HelmetMozira";
+                return "Enemys/HelmetMozira";
             case 3:
-                return "RareMozira";
+                return "Enemys/RareMozira";
             case 4:
-                return "Snake";
+                return "Enemys/Snake";
             default:
                 return "errer";
         }

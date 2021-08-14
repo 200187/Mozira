@@ -16,7 +16,6 @@ public class Scorer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CurrentScore = EnemyCount.score;
         GetComponent<Text>().text = CurrentScore.ToString("F2");
     }
 }

@@ -23,7 +23,7 @@ public class StartButton : MonoBehaviour
     {
         if (!isClicked)
         {
-            Invoke("ChangeScene", 1.5f);
+            Invoke("ChangeScene", 1.0f);
         }
         isClicked = true;
     }
