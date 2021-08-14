@@ -143,7 +143,6 @@ GameObject:
   - component: {fileID: 5215449727182838665}
   - component: {fileID: 8292543931582547115}
   - component: {fileID: 5844765601983690400}
-  - component: {fileID: 5119820427084296471}
   - component: {fileID: 5748270875412784830}
   m_Layer: 5
   m_Name: HelmetMozira
@@ -253,8 +252,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5119820427084296471}
-        m_TargetAssemblyTypeName: EnemyCount, Assembly-CSharp
+      - m_Target: {fileID: 5748270875412784830}
+        m_TargetAssemblyTypeName: EnemyManager, Assembly-CSharp
         m_MethodName: ClickedHelmet
         m_Mode: 1
         m_Arguments:
@@ -265,18 +264,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5119820427084296471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7284988856545049980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f361731de6a8ce42b57fd1b46bebbcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5748270875412784830
 MonoBehaviour:
   m_ObjectHideFlags: 0
