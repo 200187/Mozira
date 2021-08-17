@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PullButton : MonoBehaviour
 {
+    [SerializeField] private AudioSource PushSE;
     bool isClicked = false;
 
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class PullButton : MonoBehaviour
 
     public void Clicked()
     {
+        PushSE.Play();
         Invoke("PullGacha", 1.0f);   
     }
 

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ReturnButton : MonoBehaviour
 {
+    [SerializeField] private AudioSource PushSE;
     bool isClicked = false;
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class ReturnButton : MonoBehaviour
     {
         if (!isClicked)
         {
+            PushSE.Play();
             Invoke("ChangeScene", 1.0f);
         }
         isClicked = true;

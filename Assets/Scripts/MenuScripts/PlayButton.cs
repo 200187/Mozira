@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayButton : MonoBehaviour
 {
+    [SerializeField] private AudioSource PushSE;
     public static int players = 0;
     bool isClicked = false;
 
@@ -25,7 +26,9 @@ public class PlayButton : MonoBehaviour
         players = 1;
         if (!isClicked)
         {
+            PushSE.Play();
             Invoke("ChangeScene", 1.0f);
+           
         }
         isClicked = true;
     }
@@ -35,6 +38,7 @@ public class PlayButton : MonoBehaviour
         players = 2;
         if (!isClicked)
         {
+            PushSE.Play();
             Invoke("ChangeScene", 1.0f);
         }
         isClicked = true;
