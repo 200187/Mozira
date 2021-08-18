@@ -7,7 +7,6 @@ public class PullButton : MonoBehaviour
     [SerializeField] private AudioSource PushSE;
     bool isClicked = false;
    
-    [SerializeField] private GameObject Wallpaper;
     // Start is called before the first frame update
     void Start()
     {

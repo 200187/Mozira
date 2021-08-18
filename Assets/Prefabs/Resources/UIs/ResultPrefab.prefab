@@ -125,7 +125,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7573136406942566668}
         m_TargetAssemblyTypeName: RetryButton, Assembly-CSharp
-        m_MethodName: ClickedSinglePlay
+        m_MethodName: Clicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -392,7 +392,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PushSE: {fileID: 1145352920785062392}
-  Wallpaper: {fileID: 0}
 --- !u!82 &1145352920785062392
 AudioSource:
   m_ObjectHideFlags: 0

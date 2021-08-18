@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class ReturnButton : MonoBehaviour
 {
     [SerializeField] private AudioSource PushSE;
-    [SerializeField] private GameObject Wallpaper;
     bool isClicked = false;
 
     // Start is called before the first frame update
@@ -26,8 +25,7 @@ public class ReturnButton : MonoBehaviour
     {
         if (!isClicked)
         {
-            PushSE.Play();
-         
+            PushSE.Play();   
             Invoke("ChangeScene", 1.0f);
         }
         isClicked = true;
@@ -36,5 +34,7 @@ public class ReturnButton : MonoBehaviour
     void ChangeScene()
     {
         SceneManager.LoadScene("MenuScene");
+        Scorer.CurrentScore = 0;
+        Timer.TimeLimit = 5.0f;
     }
 }

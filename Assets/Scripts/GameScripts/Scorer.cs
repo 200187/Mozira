@@ -16,6 +16,6 @@ public class Scorer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Text>().text = CurrentScore.ToString("F2");
+        GetComponent<Text>().text = CurrentScore.ToString();
     }
 }

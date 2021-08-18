@@ -13,6 +13,7 @@ public class CoinDisplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Text>().text = GrobalInfo.coin.ToString();
+        string coins = GrobalInfo.coin + "C";
+        GetComponent<Text>().text = coins;
     }
 }

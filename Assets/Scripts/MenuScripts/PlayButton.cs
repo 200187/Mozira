@@ -23,12 +23,16 @@ public class PlayButton : MonoBehaviour
 
     public void ClickedSinglePlay()
     {
-        players = 1;
+
         if (!isClicked)
         {
-            PushSE.Play();
-            Invoke("ChangeScene", 1.0f);
-           
+            if (GrobalInfo.life > 0)
+            {
+                players = 1;
+                PushSE.Play();
+                Invoke("ChangeScene", 1.0f);
+                GrobalInfo.life--;
+            }
         }
         isClicked = true;
     }

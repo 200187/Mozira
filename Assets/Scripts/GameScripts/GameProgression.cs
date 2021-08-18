@@ -10,6 +10,7 @@ public class GameProgression : MonoBehaviour
     bool Continue = false;
 
     public static GameObject instance = null;
+
     [SerializeField] private GameObject canvas;
 
     public static int ClicksMozira = 0;
@@ -37,10 +38,7 @@ public class GameProgression : MonoBehaviour
             {
                 EnemyExists = true;
                 Invoke("RandomHole", 0.7f);
-               
-              
             }
-            isFinish = false;
         }
         else
         {
@@ -74,12 +72,10 @@ public class GameProgression : MonoBehaviour
         }
     }
     void ToResult()
-    {
-        
+    {       
         Destroy(canvas.gameObject);
         GameObject obj = (GameObject)Resources.Load("UIs/ResultPrefab");
-        Instantiate(obj, new Vector3(0.0f, 0.0f, -5.0f), Quaternion.identity);
-       
+        Instantiate(obj, new Vector3(0.0f, 0.0f, -5.0f), Quaternion.identity);       
     }
 
     void RandomHole()

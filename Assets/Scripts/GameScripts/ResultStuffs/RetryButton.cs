@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 public class RetryButton : MonoBehaviour
 {
     [SerializeField] private AudioSource PushSE;
-    public static int players = 0;
     bool isClicked = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,18 +16,19 @@ public class RetryButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-        
+            
     }
 
-    public void ClickedSinglePlay()
-    {
-        players = 1;
+    public void Clicked()
+    {      
         if (!isClicked)
         {
-            PushSE.Play();
-            Invoke("ChangeScene", 1.0f);
- 
+            if (GrobalInfo.life > 0)
+            {
+                PushSE.Play();
+                Invoke("ChangeScene", 1.0f);
+                GrobalInfo.life--;
+            }
         }
         isClicked = true;
     }

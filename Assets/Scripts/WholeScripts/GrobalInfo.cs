@@ -11,12 +11,20 @@ public class GrobalInfo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (life < 5)
+        {
+            Invoke("AddLife", 300.0f);
+        }
+    }
+
+    void AddLife()
+    {
+         life++;
     }
 }
