@@ -32,6 +32,7 @@ public class EnemyManager : MonoBehaviour
             Scorer.CurrentScore++;
             Destroy(transform.parent.gameObject.transform.parent.gameObject);
             GameProgression.EnemyExists = false;
+            GameProgression.ClicksMozira++;
         }
         isClicked = true;
     }
@@ -45,6 +46,7 @@ public class EnemyManager : MonoBehaviour
             Scorer.CurrentScore++;
             Destroy(transform.parent.gameObject.transform.parent.gameObject);
             GameProgression.EnemyExists = false;
+            GameProgression.ClicksHelmetMozira++;
             clicks = 0;
         }
     }
@@ -56,6 +58,7 @@ public class EnemyManager : MonoBehaviour
             Scorer.CurrentScore += 3;
             Destroy(transform.parent.gameObject.transform.parent.gameObject);
             GameProgression.EnemyExists = false;
+            GameProgression.ClicksRareMozira++;
         }
         isClicked = true;
     }
@@ -67,6 +70,7 @@ public class EnemyManager : MonoBehaviour
             Scorer.CurrentScore -= 3;
             Destroy(transform.parent.gameObject.transform.parent.gameObject);
             GameProgression.EnemyExists = false;
+            GameProgression.ClicksSnake++;
         }
         isClicked = true;
     }

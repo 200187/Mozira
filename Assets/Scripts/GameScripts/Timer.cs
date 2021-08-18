@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public static float TimeLimit = 90f;
+    public static float TimeLimit = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class Timer : MonoBehaviour
 
         if (TimeLimit <= 0)
         {
-
+           
         }
         else
         {
