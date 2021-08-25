@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1555014964902201111}
   - component: {fileID: 8392502414466638429}
   - component: {fileID: 2206219135037911870}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 3.6092}
-  m_SizeDelta: {x: 100, y: 57.55}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1555014964902201111
 CanvasRenderer:
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 6055641371437440902}
   - component: {fileID: 6194505306176990805}
   - component: {fileID: 1642721295869116192}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 8484534902369479166}
   - component: {fileID: 4700467336986619675}
   - component: {fileID: 443589943180236432}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,10 +226,10 @@ RectTransform:
   m_Father: {fileID: 2310508292658708049}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 120, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4700467336986619675
 CanvasRenderer:
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -282,7 +282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7795204472071134441}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: GachaPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 8609010533378921519}
   - component: {fileID: 689064631014531321}
   - component: {fileID: 3868499004763763924}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: PullButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,8 +343,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 59, y: -162}
-  m_SizeDelta: {x: 95.2294, y: 18.0054}
+  m_AnchoredPosition: {x: 67.9, y: -152.9}
+  m_SizeDelta: {x: 120, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8751324398091603306
 CanvasRenderer:
@@ -374,8 +374,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: f9dfa1532fa5f924c91e71b2ae9d5367, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -453,7 +453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PushSE: {fileID: 3868499004763763924}
-  Wallpaper: {fileID: 0}
 --- !u!82 &3868499004763763924
 AudioSource:
   m_ObjectHideFlags: 0
@@ -561,7 +560,7 @@ GameObject:
   - component: {fileID: 9123049766720802230}
   - component: {fileID: 4036929838007317574}
   - component: {fileID: 3678081785950758671}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,10 +581,10 @@ RectTransform:
   m_Father: {fileID: 8037852324367225510}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 120, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4036929838007317574
 CanvasRenderer:
@@ -608,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -643,7 +642,7 @@ GameObject:
   - component: {fileID: 4885922981547803941}
   - component: {fileID: 3011244437627384376}
   - component: {fileID: 781655598036191364}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: ReturnButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,8 +666,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -68, y: -162}
-  m_SizeDelta: {x: 95.2294, y: 18.0054}
+  m_AnchoredPosition: {x: -67.1, y: -152.6}
+  m_SizeDelta: {x: 120, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1702239353275994421
 CanvasRenderer:
@@ -698,8 +697,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: dcca6f4376b3f2a419cbb3af9220bc96, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -777,7 +776,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PushSE: {fileID: 781655598036191364}
-  Wallpaper: {fileID: 0}
 --- !u!82 &781655598036191364
 AudioSource:
   m_ObjectHideFlags: 0
@@ -884,7 +882,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8255444776916434324}
   - component: {fileID: 1543652493557765492}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: GachaTestRepull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -967,7 +965,7 @@ GameObject:
   - component: {fileID: 6992730210214626189}
   - component: {fileID: 6865242610958899600}
   - component: {fileID: 5440180479267485083}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: CoinDisplayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -992,7 +990,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 79, y: 150}
-  m_SizeDelta: {x: 100, y: 50.3312}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6865242610958899600
 CanvasRenderer:
