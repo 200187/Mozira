@@ -38,11 +38,13 @@ public class GameProgression : MonoBehaviour
             {
                 EnemyExists = true;
                 Invoke("RandomHole", 0.7f);
+             
             }
         }
         else
         {
             isFinish = true;
+          
         }
 
         if (isFinish)
@@ -75,7 +77,9 @@ public class GameProgression : MonoBehaviour
     {       
         Destroy(canvas.gameObject);
         GameObject obj = (GameObject)Resources.Load("UIs/ResultPrefab");
-        Instantiate(obj, new Vector3(0.0f, 0.0f, -5.0f), Quaternion.identity);       
+        Instantiate(obj, new Vector3(0.0f, 0.0f, -5.0f), Quaternion.identity);
+        GrobalInfo.coin += 200;
+        GrobalInfo.level += 1;
     }
 
     void RandomHole()

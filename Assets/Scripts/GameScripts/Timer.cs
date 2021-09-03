@@ -26,6 +26,7 @@ public class Timer : MonoBehaviour
         else
         {
             TimeLimit -= Time.deltaTime;
+           
         }
     }
 }
