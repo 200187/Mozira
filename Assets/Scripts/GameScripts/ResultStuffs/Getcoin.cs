@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class LevelDisplayer : MonoBehaviour
+public class Getcoin : MonoBehaviour
 {
+    public static int money = 200;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,6 @@ public class LevelDisplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Text>().text = ((int)GrobalInfo.level).ToString();
+        GetComponent<Text>().text = money.ToString();
     }
 }

@@ -79,7 +79,7 @@ public class GameProgression : MonoBehaviour
         GameObject obj = (GameObject)Resources.Load("UIs/ResultPrefab");
         Instantiate(obj, new Vector3(0.0f, 0.0f, -5.0f), Quaternion.identity);
         GrobalInfo.coin += 200;
-        GrobalInfo.level += 1;
+        GrobalInfo.level += 0.5f;
     }
 
     void RandomHole()
