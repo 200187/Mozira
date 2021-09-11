@@ -35,6 +35,36 @@ public class RetryButton : MonoBehaviour
 
     void ChangeScene()
     {
+        if (Scoresave.one < Scorer.CurrentScore)
+        {
+            Scoresave.five = Scoresave.fourth;
+            Scoresave.fourth = Scoresave.three;
+            Scoresave.three = Scoresave.two;
+            Scoresave.two = Scoresave.one;
+            Scoresave.one = Scorer.CurrentScore;
+        }
+        else if (Scoresave.two < Scorer.CurrentScore)
+        {
+            Scoresave.five = Scoresave.fourth;
+            Scoresave.fourth = Scoresave.three;
+            Scoresave.three = Scoresave.two;
+            Scoresave.two = Scorer.CurrentScore;
+        }
+        else if (Scoresave.three < Scorer.CurrentScore)
+        {
+            Scoresave.five = Scoresave.fourth;
+            Scoresave.fourth = Scoresave.three;
+            Scoresave.three = Scorer.CurrentScore;
+        }
+        else if (Scoresave.fourth < Scorer.CurrentScore)
+        {
+            Scoresave.five = Scoresave.fourth;
+            Scoresave.fourth = Scorer.CurrentScore;
+        }
+        else if (Scoresave.five < Scorer.CurrentScore)
+        {
+            Scoresave.five = Scorer.CurrentScore;
+        }
         SceneManager.LoadScene("GameScene");
         Scorer.CurrentScore = 0;
         Timer.TimeLimit = 5.0f;
