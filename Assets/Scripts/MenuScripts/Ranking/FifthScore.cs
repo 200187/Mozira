@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class LevelDisplayer : MonoBehaviour
+public class FifthScore : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,6 +13,6 @@ public class LevelDisplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Text>().text = ((int)GrobalInfo.level).ToString();
+        GetComponent<Text>().text = Scoresave.five.ToString();
     }
 }

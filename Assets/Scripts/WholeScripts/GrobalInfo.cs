@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GrobalInfo : MonoBehaviour
 {
-    public static int level = 0;
+    public static float level = 0;
     public static int coin = 10000;
-    public static int life = 5;
+    public static int life = 10;
 
     // Start is called before the first frame update
     void Start()
