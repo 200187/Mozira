@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 8292543931582547115}
   - component: {fileID: 5844765601983690400}
   - component: {fileID: 5748270875412784830}
+  - component: {fileID: 6606561268354047285}
   m_Layer: 5
   m_Name: HelmetMozira
   m_TagString: Untagged
@@ -168,7 +169,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 663}
+  m_SizeDelta: {x: 1024, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5215449727182838665
 CanvasRenderer:
@@ -198,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 22ab6ea5cba5c9d44a0aa9787d7cdf9c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34ff7feb54b0bee44be09fbfafd99b5d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -276,3 +277,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8968bf3a1f5ac9a45abc928a324d4e74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &6606561268354047285
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7284988856545049980}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 24836f9ea1dbfa743931600d9a71af60, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
