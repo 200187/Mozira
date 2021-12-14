@@ -5,27 +5,27 @@ using UnityEngine;
 public class HammerSet : MonoBehaviour
 {
     public static bool hammerSet = true;
+
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.SetActive(true);
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (!hammerSet)
         {
-            gameObject.SetActive(false);
+            Invoke("Hit",0.2f);
+            transform.position = new Vector3(275f, 400f, -5f);
             hammerSet = true;
-            Invoke("Display", 0.5f);
-
-
         }
     }
-    void Display()
+    void Hit()
     {
-        gameObject.SetActive(true);
+        transform.position = new Vector3(300f, 350f, -5f);
     }
 }
+
+
 

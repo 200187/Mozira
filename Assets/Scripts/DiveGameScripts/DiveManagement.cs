@@ -18,16 +18,19 @@ public class DiveManagement : MonoBehaviour
     {
             if (Timer.TimeLimit <= 0)
             {
-                isFinish = true;
+                
             }
 
-            if (isFinish)
+        if (HealthText.health <= 0)
+        {
+            isFinish = true;
+        }
+
+            if (isFinish&&!continues)
             {
-                if (!continues)
-                {
+                
                     Invoke("ToResult", 1.0f);
                     continues = true;
-                }
             }
     }
     void ToResult()

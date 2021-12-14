@@ -38,5 +38,6 @@ public class DiveRetry : MonoBehaviour
         Timer.TimeLimit = 5.0f;
         DiveScore.CurrentDiveScore = 0;
         AppearsButton.Appears = false;
+        HealthText.health = 3;
     }
 }
