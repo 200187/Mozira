@@ -59,7 +59,6 @@ public class AppearsButton : MonoBehaviour
     void Minus()
     {
         HammerSet.hammerSet = false;
-        HammerHit.hammerHit = true;
         HealthText.health--;
         RiskText.riskProbability = false;
         if (HealthText.health==0)
