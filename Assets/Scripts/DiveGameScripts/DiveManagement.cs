@@ -16,10 +16,10 @@ public class DiveManagement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-            if (Timer.TimeLimit <= 0)
-            {
-                
-            }
+        if (Timer.TimeLimit <= 0)
+        {
+            isFinish = true;
+        }
 
         if (HealthText.health <= 0)
         {
@@ -29,7 +29,7 @@ public class DiveManagement : MonoBehaviour
             if (isFinish&&!continues)
             {
                 
-                    Invoke("ToResult", 1.0f);
+                    Invoke("ToResult", 0.1f);
                     continues = true;
             }
     }

@@ -35,7 +35,7 @@ public class DiveRetry : MonoBehaviour
     void ChangeScene()
     {
         SceneManager.LoadScene("DiveGameScene");
-        Timer.TimeLimit = 5.0f;
+        Timer.TimeLimit = 30.0f;
         DiveScore.CurrentDiveScore = 0;
         AppearsButton.Appears = false;
         HealthText.health = 3;

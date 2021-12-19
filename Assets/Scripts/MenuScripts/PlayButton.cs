@@ -32,6 +32,7 @@ public class PlayButton : MonoBehaviour
                 PushSE.Play();
                 Invoke("ChangeScene", 1.0f);
                 GrobalInfo.life--;
+                Timer.TimeLimit = 30.0f;
             }
         }
         isClicked = true;

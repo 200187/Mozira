@@ -67,6 +67,6 @@ public class RetryButton : MonoBehaviour
         }
         SceneManager.LoadScene("GameScene");
         Scorer.CurrentScore = 0;
-        Timer.TimeLimit = 5.0f;
+        Timer.TimeLimit = 30.0f;
     }
 }
